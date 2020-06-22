@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TourMateBatch14</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weather_api_key">79945a8b31c41b9333fc9ba265975ec1</string>
+    <string name="place_api">AIzaSyBuJwQG-SwA_3fra1__65SN2sJ1n42-bWc</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

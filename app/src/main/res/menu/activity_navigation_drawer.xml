@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:showIn="navigation_view">
+
+<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/weatherFragment"
+        android:icon="@android:drawable/ic_menu_camera"
+        android:title="Weather"
+        android:iconTint="@android:color/holo_blue_dark"/>
+</group>
+
+<item android:title="Map">
+    <menu>
+        <item
+            android:id="@+id/nearbyFragment"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="Nearby Places"
+            />
+
+    </menu>
+</item>
+
+</menu>

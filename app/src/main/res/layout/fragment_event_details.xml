@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_light"
+        tools:context=".EventDetailsFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="5dp"
+            android:id="@+id/details_event_name"
+            style="@style/TextAppearance.AppCompat.Headline"
+            tools:text="Event Name"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/details_budget_status"
+            style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+            tools:text="Total budget"
+            android:gravity="center"
+            android:layout_margin="7dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_totalExpense"
+                android:layout_weight=".4"
+                style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                tools:text="Expense"
+                android:gravity="center"/>
+            <ProgressBar
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:id="@+id/budgetPB"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/details_budget_remainder"
+                style="@style/TextAppearance.AppCompat.Widget.PopupMenu.Header"
+                tools:text="remaining"
+                android:layout_weight=".4"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Add Expense"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_weight="1"
+                android:id="@+id/addExpenseBtn"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Add Budget"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_weight="1"
+                android:id="@+id/addBudgetBtn"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="view Expense"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:id="@+id/viewExpenseBtn"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <ProgressBar
+                    android:id="@+id/imageUploadPB"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cameraBtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    />
+
+                <Button
+                    android:id="@+id/cameraBtn"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="44dp"
+                    android:text="capture moment"
+                    android:background="@android:color/holo_blue_dark"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</layout>
